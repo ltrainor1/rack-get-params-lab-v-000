@@ -10,7 +10,6 @@ class Application
 
 
     if req.path.match(/items/)
-      binding.pry
       @@items.each do |item|
         resp.write "#{item}\n"
       end
